@@ -1,7 +1,7 @@
-import logging
+import logging 
 from typing import List, Tuple, Union
 
-import pandas as pd
+import pandas as pd 
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -38,7 +38,7 @@ def create_preprocessing_pipeline(
             ("imputer", SimpleImputer(strategy="constant", fill_value="missing")),
             (
                 "onehot",
-                OneHotEncoder(handle_unknown="ignore", sparse=False),
+                OneHotEncoder(handle_unknown="ignore", sparse_output=False),
             ),
         ],
         memory=None,
