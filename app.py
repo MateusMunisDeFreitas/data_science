@@ -78,9 +78,6 @@ fase = st.sidebar.radio(
     ["📈 Visão Geral", "🔍 Fase 1: Exploração", "💡 Fase 2: NLP", "📊 Fase 3: Previsões"]
 )
 
-# Filtros
-st.sidebar.subheader("🔎 Filtros")
-
 # ===== MAIN CONTENT =====
 def render_overview(df, nlp_analyzer, ts_analyzer, ts_results):
     """Renderiza visão geral do projeto."""
